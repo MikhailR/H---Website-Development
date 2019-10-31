@@ -1,10 +1,26 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather:300i|Montserrat:300,400|Roboto|Work+Sans:300,400,500&display=swap');
 
+/*font-family: 'Roboto', sans-serif;
+font-family: 'Work Sans', sans-serif;
+font-family: 'Merriweather', serif;
+font-family: 'Montserrat', sans-serif;*/
 
 
 @import url("my-reset.css");
+@import url("section-header_and_top.css");
+@import url("section-about.css");
+@import url("section-team.css");
+@import url("section-services.css");
+@import url("section-contacts_and_footer.css");
 
 body {
-
+	background-color: #fff;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 15px;
+	font-weight: 300;
+	line-height: 22px;
+	letter-spacing: 0.02em;
+	color: #b7b7b7;
 }
 
 .container {
@@ -14,7 +30,56 @@ body {
 
 .wrap {
 	min-width: 320px;
-	max-width: 1200px;
+	max-width: 1170px;
 	margin: 0 auto;
 	padding: 0 15px;
+	text-align: center;
+}
+
+.section__title {
+	font-family: 'Work Sans', sans-serif;
+	font-size: 34px;
+	font-weight: 300;
+	line-height: 34px;
+	color: #1d1e1f;
+}
+
+.section__text {
+	font-family: 'Merriweather', serif;
+	font-size: 16px;
+	font-weight: 300;
+	font-style: italic;
+	line-height: 26px;
+	color: #898888;
+}
+
+.btn {
+	display: inline-block;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition-duration: 0.5s;
+}
+
+@media screen and (max-width: 480px) {
+	.section__title {
+		font-size: 24px;
+		line-height: 24px;
+	}
+
+	.section__text {
+		font-size: 14px;
+		line-height: 20px;
+	}
+}
+
+@media screen and (max-width: 375px) {
+	.section__title {
+		font-size: 20px;
+		font-weight: 500;
+		line-height: 24px;
+	}
+
+	.wrap {
+		padding: 0;
+	}
 }
